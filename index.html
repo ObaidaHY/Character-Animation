@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animated Characters</title>
+  <style>
+    #animation-container {
+      width: 400px;
+      height: 400px;
+      border: 1px solid black;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .character {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Animated Characters</h1>
+  <input type="file" id="fileInput" style="display: none;" accept="image/*">
+  <button onclick="openFileInput()">+</button>
+  <div id="animation-container" tabindex="0" onkeydown="moveCharacter(event)">
+    <!-- Animation container will hold the characters -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
